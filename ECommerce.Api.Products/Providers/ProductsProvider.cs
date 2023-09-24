@@ -85,7 +85,7 @@ namespace ECommerce.Api.Products.Providers
             }
         }
 
-        public async Task<(bool IsSuccess, ProductDto Products, string ErrorMessage)> GetProductAsync(int id)
+        public async Task<(bool IsSuccess, ProductDto Product, string ErrorMessage)> GetProductAsync(int id)
         {
             try
             {

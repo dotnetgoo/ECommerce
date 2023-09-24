@@ -32,7 +32,7 @@ namespace ECommerce.Api.Products.Controllers
             var result = await _productsProvider.GetProductAsync(id);
             if (result.IsSuccess)
             {
-                return Ok(result.Products);
+                return Ok(result.Product);
             }
 
             return NotFound();
