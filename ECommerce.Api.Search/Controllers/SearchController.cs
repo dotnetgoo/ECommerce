@@ -19,7 +19,7 @@ namespace ECommerce.Api.Search.Controllers
         public async Task<IActionResult> SearchAsync(SearchTerm term)
         {
             var result = await _searchService.SearchAsync(term.CustomerId);
-            if(result.IsSuccess)
+            if (result.IsSuccess)
             {
                 return Ok(result.SearchResult);
             }

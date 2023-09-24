@@ -8,7 +8,7 @@ namespace ECommerce.Api.Orders.Data
         public OrdersDbContext(DbContextOptions options)
             : base(options)
         {
-            
+
         }
 
         public DbSet<Order> Orders { get; set; }

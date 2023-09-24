@@ -14,10 +14,10 @@ namespace ECommerce.Api.Orders.Controllers
         }
 
         [HttpGet("{customerId:int}")]
-        public async Task<IActionResult> GetOrdersAsync(int customerId) 
+        public async Task<IActionResult> GetOrdersAsync(int customerId)
         {
             var result = await _ordersProvider.GetOrdersAsync(customerId);
-            if(result.IsSuccess)
+            if (result.IsSuccess)
             {
                 return Ok(result.Orders);
             }

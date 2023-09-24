@@ -17,7 +17,7 @@ namespace ECommerce.Api.Customers.Controllers
         public async Task<IActionResult> GetCustomersAsync()
         {
             var result = await _customersProvider.GetCustomersAsync();
-            if(result.IsSuccess)
+            if (result.IsSuccess)
             {
                 return Ok(result.Customers);
             }

@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Api.Products", "ECommerce.Api.Products\ECommerce.Api.Products.csproj", "{3B01CDEE-199E-4AD2-B53A-CC727C6ACF93}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommerce.Api.Products", "ECommerce.Api.Products\ECommerce.Api.Products.csproj", "{3B01CDEE-199E-4AD2-B53A-CC727C6ACF93}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Api.Customers", "ECommerce.Api.Customers\ECommerce.Api.Customers.csproj", "{1BA3876D-6373-4D15-A7AA-D28819FD263E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommerce.Api.Customers", "ECommerce.Api.Customers\ECommerce.Api.Customers.csproj", "{1BA3876D-6373-4D15-A7AA-D28819FD263E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Api.Orders", "ECommerce.Api.Orders\ECommerce.Api.Orders.csproj", "{6F64A9B3-543E-4E6E-B3FD-064972172246}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommerce.Api.Orders", "ECommerce.Api.Orders\ECommerce.Api.Orders.csproj", "{6F64A9B3-543E-4E6E-B3FD-064972172246}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Api.Search", "ECommerce.Api.Search\ECommerce.Api.Search.csproj", "{9F964264-D39C-4A0A-BB11-0697F4933970}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommerce.Api.Search", "ECommerce.Api.Search\ECommerce.Api.Search.csproj", "{9F964264-D39C-4A0A-BB11-0697F4933970}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Api.Products.Tests", "ECommerce.Api.Products.Tests\ECommerce.Api.Products.Tests.csproj", "{A8C63318-3798-43CA-BE65-D48EA36C3AFE}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{962C868B-317F-40EA-AC7A-27F80FC87C78}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{9F964264-D39C-4A0A-BB11-0697F4933970}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F964264-D39C-4A0A-BB11-0697F4933970}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F964264-D39C-4A0A-BB11-0697F4933970}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8C63318-3798-43CA-BE65-D48EA36C3AFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8C63318-3798-43CA-BE65-D48EA36C3AFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8C63318-3798-43CA-BE65-D48EA36C3AFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8C63318-3798-43CA-BE65-D48EA36C3AFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{962C868B-317F-40EA-AC7A-27F80FC87C78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{962C868B-317F-40EA-AC7A-27F80FC87C78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{962C868B-317F-40EA-AC7A-27F80FC87C78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{962C868B-317F-40EA-AC7A-27F80FC87C78}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

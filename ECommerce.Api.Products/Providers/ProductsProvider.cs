@@ -24,7 +24,7 @@ namespace ECommerce.Api.Products.Providers
 
         private async void SeedData()
         {
-            if(!dbContext.Products.Any())
+            if (!dbContext.Products.Any())
             {
                 dbContext.Products.AddRange(
                     new Entities.Product[]
@@ -68,10 +68,10 @@ namespace ECommerce.Api.Products.Providers
             try
             {
                 var products = await dbContext.Products.ToListAsync();
-                if(products != null && products.Any())
+                if (products != null && products.Any())
                 {
                     var result = mapper.Map<IEnumerable<Product>, IEnumerable<ProductDto>>(products);
-                    
+
                     return (true, result, null);
                 }
 
@@ -85,7 +85,7 @@ namespace ECommerce.Api.Products.Providers
             }
         }
 
-        public async Task<(bool IsSuccess, ProductDto Products, string ErrorMessage)> GetProductAsync(int id)
+        public async Task<(bool IsSuccess, ProductDto Product, string ErrorMessage)> GetProductAsync(int id)
         {
             try
             {

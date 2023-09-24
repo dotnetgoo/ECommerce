@@ -4,11 +4,11 @@ using System.Text.Json;
 
 namespace ECommerce.Api.Search.Services
 {
-    public class OrderService : IOrderService
+    public class OrdersService : IOrdersService
     {
         private readonly IHttpClientFactory _httpClientFactory;
-        private readonly ILogger<OrderService> _logger;
-        public OrderService(IHttpClientFactory httpClientFactory, ILogger<OrderService> logger)
+        private readonly ILogger<OrdersService> _logger;
+        public OrdersService(IHttpClientFactory httpClientFactory, ILogger<OrdersService> logger)
         {
             _httpClientFactory=httpClientFactory;
             _logger = logger;
@@ -34,10 +34,10 @@ namespace ECommerce.Api.Search.Services
             catch (Exception ex)
             {
                 _logger.LogError(ex.ToString());
-                
-                return (false,  null, ex.Message);   
+
+                return (false, null, ex.Message);
             }
-            
+
         }
     }
 }

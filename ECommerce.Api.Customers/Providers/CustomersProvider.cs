@@ -4,7 +4,6 @@ using ECommerce.Api.Customers.Data.Entities;
 using ECommerce.Api.Customers.Interfaces;
 using ECommerce.Api.Customers.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
 
 namespace ECommerce.Api.Customers.Providers
 {
@@ -27,7 +26,7 @@ namespace ECommerce.Api.Customers.Providers
         {
             if (!_dbContext.Customers.Any())
             {
-                _dbContext.Customers.AddRange(new Customer[] 
+                _dbContext.Customers.AddRange(new Customer[]
                 {
                     new Customer { Id = 1, Name = "Muhammadkarim To'xtaboyev", Address = "Yunusobod 14" },
                     new Customer { Id = 2, Name = "Samandar Uralov", Address = "Yunusobod 12" },

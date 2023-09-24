@@ -1,6 +1,4 @@
-﻿using ECommerce.Api.Orders.Data.Entities;
-
-namespace ECommerce.Api.Orders.Models
+﻿namespace ECommerce.Api.Orders.Models
 {
     public class OrderDto
     {
