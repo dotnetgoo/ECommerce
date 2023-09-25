@@ -1,5 +1,4 @@
 ﻿using ECommerce.Api.Products.Models;
-using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace ECommerce.Api.Products.Interfaces
 {

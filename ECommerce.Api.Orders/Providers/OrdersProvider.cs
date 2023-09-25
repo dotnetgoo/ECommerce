@@ -24,7 +24,7 @@ namespace ECommerce.Api.Orders.Providers
 
         private async void SeedData()
         {
-            if(!dbContext.OrderItems.Any()) 
+            if (!dbContext.OrderItems.Any())
             {
                 dbContext.OrderItems.AddRange(new OrderItem[]
                 {
@@ -67,7 +67,7 @@ namespace ECommerce.Api.Orders.Providers
             catch (Exception ex)
             {
                 logger.LogError(ex.Message);
-                
+
                 return (false, null, ex.Message);
             }
         }

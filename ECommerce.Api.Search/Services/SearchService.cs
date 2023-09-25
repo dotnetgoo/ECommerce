@@ -21,11 +21,11 @@ namespace ECommerce.Api.Search.Services
             var productsResult = await _productService.GetProductsAsync();
             var customersResult = await _customerService.GetCustomerAsync(customerId);
 
-            if(ordersResult.IsSuccess)
+            if (ordersResult.IsSuccess)
             {
-                foreach(var order in ordersResult.Orders)
+                foreach (var order in ordersResult.Orders)
                 {
-                    foreach(var item in order.Items)
+                    foreach (var item in order.Items)
                     {
                         item.ProductName = productsResult.IsSuccess
                             ? productsResult.Products.FirstOrDefault(p => p.Id == item.ProductId)?.Name
@@ -34,8 +34,8 @@ namespace ECommerce.Api.Search.Services
                 }
                 var result = new
                 {
-                    Customer = customersResult.IsSuccess ? 
-                                customersResult.Customer : 
+                    Customer = customersResult.IsSuccess ?
+                                customersResult.Customer :
                                 new { Name = "Customer information is not available" },
                     Orders = ordersResult.Orders,
                 };

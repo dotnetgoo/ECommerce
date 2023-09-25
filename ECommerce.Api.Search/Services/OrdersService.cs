@@ -34,10 +34,10 @@ namespace ECommerce.Api.Search.Services
             catch (Exception ex)
             {
                 _logger.LogError(ex.ToString());
-                
-                return (false,  null, ex.Message);   
+
+                return (false, null, ex.Message);
             }
-            
+
         }
     }
 }
